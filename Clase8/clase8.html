@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;1,700&family=Dosis&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href= "style-clase8.css">  
+        <title>Oh my JS! - Clase 8</title>
+    </head>
+<body>
+    <header>
+        <h1>Clase 8: To Do Save and Filter</h1>
+    </header>
+    <main id = "Wrapper">
+        <div>   
+            <span class = "happy">
+                <img src="emotion.png">
+            </span>
+            <span class = "description">
+            <p>
+                Para finalizar las clases y esta aplicación vimos el guardar información por si se refresca la página no se pierda lo que hemos metido dentro 
+                de nuestra página, para esto utilizamos <strong>JSON</strong> que convierte los objetos en strings y también utilizamos <strong>localStorage</strong>
+                pero es local y no hay sincronización de dispositivos pero funciona para una app sencilla. Así que hicimos una función que guarda información con 
+                <strong>localStorage.setItem</strong> y agregamos la clase de la lista y el <strong>JSON.Stringtify</strong> a la lista. 
+                Y en las funciones que en donde agregamos y removemos tareas, se llama esta función para guardar los cambios. </br>
+                También agregamos un filter y un mensaje cuando no hubiera tareas o el filtro de las tareas no existiera; para el filter se agregó un nuevo input en el 
+                cual se puede escribir y conforme vas escribiendo las tareas se van ocultando solamente dejando aquellas que coincidan con lo que escribiste, para esto 
+                se hizo un nuevo arreglo de tareasfiltradas, y sí las tareas filtradas, es decir, si no se escribía nada en el input y hay tareas en la lista de tareas, 
+                entonces la lista de tareas filtradas es igual a la lista de tareas; de esta forma se oculta y aparece la lista de las tareas conforme se escriba algo. </br>
+                También agregamos un nuevo template que incluye un anuncio por sí no hay tareas.
+
+            </p>
+            </span>
+        </div>
+        <div>
+            <span  class = "sad">
+                <img src="sad.png">
+            </span>
+            <span class = "description">
+                <p>
+                    Esta clase me confundió un poco por la nueva lista de tareas filtradas y no logré hacer la tarea con referencia a esta clase y sigo sin poder solucionarlo, 
+                    pero creo que también tiene que ver desde que agregué la categoríao bien que estoy llamando mal una variable, ya que el código creció mucho y varias de mis variables se parecen, entonces seguramente tengo una mal asignada, sin embargo no estoy del todo segura. Lo que si me quedó muy claro fue el guardado de datos, 
+                    con localStorage ya que anteriormente he utilizado los playerPrefs en C# y los puedo relacionar.
+
+                </p>
+            </span>
+        </div>
+    </main>
+    <footer id="Footer">
+        <span>
+            <a href="../blog.html"><img class ="home"src="home.png"></a>
+        </span>
+    </footer>
+</body>
+
+</html>

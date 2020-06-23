@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+
+:root
+{
+    --margin-01: 8px;
+    --margin-h: calc(var(--margin-01) * 0.5);
+    --margin-q: calc(var(--margin-01) * 0.25);
+    --margin-02: calc(var(--margin-01) * 2);
+    --margin-03: calc(var(--margin-01) * 3);
+    --margin-04: calc(var(--margin-01) * 4);
+    --margin-05: calc(var(--margin-01) * 5);
+    --margin-06: calc(var(--margin-01) * 6);
+    --margin-07: calc(var(--margin-01) * 7);
+    --margin-08: calc(var(--margin-01) * 8);
+    --margin-09: calc(var(--margin-01) * 9);
+    --margin-10: calc(var(--margin-01) * 10);
+
+    --color-purple:rgb(113, 33, 187);
+    --color-fuscia:  rgb(207, 40, 207);
+    --color-redpink: rgb(253, 17, 108);
+    --color-yellow:  #f3a764;
+    --color-black: #0D0D0D;
+}
+
+header
+{
+    padding: 0;
+    margin-left: auto; 
+    margin-right: auto;
+    padding: var(--margin-04);
+    border-style: dashed;
+    border-radius: 60px;
+    border-width: 3px;
+    border-color: var(--color-yellow);
+}
+
+div
+{
+    padding: var(--margin-02);
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+h1
+{
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: var(--color-purple);
+    flex-grow: 1;
+    margin: 0;
+}
+
+body
+{
+    display: flex;
+    background-image: url(bg.jpg);
+    flex-flow: column;
+    min-height: 100vh;
+
+    padding: 0;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 50%;
+}
+
+#Wrapper
+{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    flex-flow:row;
+}
+
+.intro
+{
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+    text-align: justify;
+    font-size: 24px;
+}
+
+.pd
+{
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    color: var(--color-fuscia);
+    text-align: center;
+    font-size: 24px;
+}
+
+.section, .middle
+{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: var(--margin-02);
+}
+
+.classJ
+{
+    padding: var(--margin-02);
+    cursor: pointer;
+    transition: all 0.2s ease;
+   
+}
+
+.classJ img:hover
+{
+    filter: Hue-rotate(50deg);
+}
+
+#Footer
+{
+    display: flex;
+    flex-grow: 1;
+    flex-flow:column;
+    align-items: center;
+    padding-top: var(--margin-04);
+}
+
+.redes
+{
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    min-width: 300px;
+    max-width: 100%
+}
+
+
+.followMe
+{
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 20px;
+    color: var(--color-redpink);
+    text-align: center;
+    min-width: 300px;
+    max-width: 100%;
+}
+
+.ig, .tw
+{
+    width: 60px;
+    height: 60px;
+}

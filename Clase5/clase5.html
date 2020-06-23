@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;1,700&family=Dosis&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href= "style-clase5.css">  
+        <title>Oh my JS! - Clase 5</title>
+    </head>
+<body>
+    <header>
+        <h1>Clase 5: To Do remover tareas</h1>
+    </header>
+    <main id = "Wrapper">
+        <div>   
+            <span class = "happy">
+                <img src="emotion.png">
+            </span>
+            <span class = "description">
+            <p>
+                En esta clase resolvimos la tarea anterior, la cual era agregar un botón por cada tarea y la borrara, pero también se pudieran
+                subrayar de completado. Primero agregamos en nuestro HTML un botón en nuestra tarea y lo acomodamos en css.
+                En nuestro scrip de JS, agregamos una variable que asigma un querySelector para llamar al botón de eliminar y atribuirle el evento 
+                de borrar. </br>
+                En la función de deleteTask en el evento de Target le agregamos un <strong>parentNode</strong> esto quiere decir que eliminará todo 
+                lo que este conectado o emparejado a el, ya que sí no solamente hubiera borrado el botón. 
+                Cuando agregamos la tarea, cramos todos los elementos que requiere la tarea asignada con sus clases para que respetara su diseño en 
+                el css y le asignamos a cada elemento su evento correspondiente. 
+            </p>
+            </span>
+        </div>
+        <div>
+            <span  class = "sad">
+                <img src="sad.png">
+            </span>
+            <span class = "description">
+                <p>
+                    En esta clase no tuve complicaciones, ya que los problemas los tuve en la tarea porque no pude asignarle al botón la función 
+                    correspondiente para que borrara la tarea, ya que no habíamos visto la función <strong>parentNode</strong> y aún se me dificultaba un 
+                    poco el como se le asignan los eventos a cierto elemento de HTML. Esta clase me resolvió varias dudasy me dejo más claro el proceso 
+                    para mis próximas tareas.
+                </p>
+            </span>
+        </div>
+    </main>
+    <footer id="Footer">
+        <span>
+            <a href="../blog.html"><img class ="home"src="home.png"></a>
+        </span>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+
+:root
+{
+    --margin-01: 8px;
+    --margin-h: calc(var(--margin-01) * 0.5);
+    --margin-q: calc(var(--margin-01) * 0.25);
+    --margin-02: calc(var(--margin-01) * 2);
+    --margin-03: calc(var(--margin-01) * 3);
+    --margin-04: calc(var(--margin-01) * 4);
+    --margin-05: calc(var(--margin-01) * 5);
+    --margin-06: calc(var(--margin-01) * 6);
+    --margin-07: calc(var(--margin-01) * 7);
+    --margin-08: calc(var(--margin-01) * 8);
+    --margin-09: calc(var(--margin-01) * 9);
+    --margin-10: calc(var(--margin-01) * 10);
+
+    --color-purple:rgb(113, 33, 187);
+    --color-fuscia:  rgb(207, 40, 207);
+    --color-redpink: rgb(253, 17, 108);
+    --color-yellow:  #f3a764;
+    --color-white: #F2F2F2;
+    --color-black: #0D0D0D;
+}
+
+
+body
+{
+    display: flex;
+    background-image: url(bg.jpg); 
+    flex-flow: column;
+    flex-grow: 1;
+
+    padding: 0;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 50%;
+}
+
+header
+{
+    margin-left: auto; 
+    margin-right: auto;
+    padding: var(--margin-04);
+    border-style: dashed;
+    border-radius: 60px;
+    border-width: 3px;
+    border-color: var(--color-purple);
+}
+
+h1
+{
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: var(--color-redpink);
+    flex-grow: 1;
+    margin: 0;
+}
+
+#Wrapper
+{
+    margin: 0;
+    padding-top: var(--margin-05);
+    display: flex;
+    flex-flow:row;
+    justify-content: space-between;
+}
+
+div
+{
+    align-items: center;
+    display: flex;
+    flex-flow:column;
+}
+
+img
+{
+    width: 200px;
+    height: 200px;
+}
+
+.description
+{
+    padding: var(--margin-04);
+    max-width: 500px;
+}
+
+p
+{
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    color: var(--color-white);
+    text-align: justify;
+    font-size: 24px;
+}
+
+#Footer
+{
+    display: flex;
+    flex-grow: 1;
+    flex-flow:column;
+    align-items: center;
+    padding-top: var(--margin-04);
+}
+
+.home
+{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.home:hover
+{
+    filter: Opacity(50%);
+}
+

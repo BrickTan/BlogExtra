@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;1,700&family=Dosis&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href= "style-clase4.css">  
+        <title>Oh my JS! - Clase 4</title>
+    </head>
+<body>
+    <header>
+        <h1>Clase 4: Agregar y eliminar elementos del DOM</h1>
+    </header>
+    <main id = "Wrapper">
+        <div>   
+            <span class = "happy">
+                <img src="emotion.png">
+            </span>
+            <span class = "description">
+            <p>
+                En esta clase aprendimos a agregar y eliminar elementos dinámicamente con JS. A nuestro HTML y css de la clase le agregamos un input
+                para escribir la tarea y un botón ara agregarla a la lista; además de que si seleccionamos una tarea se borra. 
+                Primero llamamos el elemento de form del HTMl y le asignamos un evento en nuestro script de Javascript; y  con una nueva función llamada 
+                "Handle Submit" en donde se agrega la tarea agregamos un <strong>event.preventDefault</strong> el cual evita que la página se actualice y 
+                se pierda la información. </br>
+                Vimos una nueva función que se llama <strong>querySelector</strong> que busca con un selector parecido a css un elemento ya sea por id, class o 
+                el nombre su tag.</br>
+                Hicimos una nueva función para agregar una tarea con un parámetro, en donde creamos elementos con la función <strong>document.createElement</strong>.
+                Por último creamos una nueva función llamada <strong>deleteTask</strong> en donde se le agrega un event.target para identificar el elemento seleccionado
+                y después le añadimos una función llamada .remove() que lo elimina.
+
+            </p>
+            </span>
+        </div>
+        <div>
+            <span  class = "sad">
+                <img src="sad.png">
+            </span>
+            <span class = "description">
+                <p>
+                    Algo que me causo mucho conflicto en esta tarea fue que se crearon muchas funciones y cada una hacía una cosa diferente pero también dependían
+                    una d ela otra para poder funcionar. También en un inicio no entendia como funcionaba la función del querySelector pero quedó un poco más claro al 
+                    hacer la tarea, ya que se refiere al elemento que se quiere seleccionar y también se puede utilizar el <strong>querySelectoAll</strong> que son todos
+                    los elementos que tengas ese tag, id o clase. 
+                </p>
+            </span>
+        </div>
+    </main>
+    <footer id="Footer">
+        <span>
+            <a href="../blog.html"><img class ="home"src="home.png"></a>
+        </span>
+    </footer>
+</body>
+
+</html>
